@@ -395,7 +395,7 @@ a:hover{
         height: 300px;
         width: 200px;
         border: transparent !important; 
-      
+    }
     
     .week-title {
         color: #d1262f;
@@ -426,7 +426,7 @@ a:hover{
     /* General Reset */
 
 
-.container1 {
+.container11{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -436,7 +436,7 @@ a:hover{
     gap: 20px;
 }
 
-.box1 {
+.box11 {
     flex: 1;
     width: 95%;
     background-color: #ffffff;
@@ -450,17 +450,17 @@ a:hover{
   
 }
 
-.container1  .box1:hover{
+.container11  .box11:hover{
     background-color: #fc9d04;
 }
 
-.box1 h3 {
+.box11 h3 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
 }
 
-.box1 p {
+.box11 p {
     font-size: 1em;
     color: #555;
     line-height: 1.5;
@@ -712,6 +712,3 @@ a:hover{
     margin-bottom: 10px;
 }
 
-.abc{
-    margin: 30px 30px 30px 30px;
-}

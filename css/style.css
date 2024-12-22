@@ -419,7 +419,7 @@ a:focus {
   color: #fc9d04;
 }
 .swiper-pagination-bullet {
-  background-color: transparent !important; /* Change bullet color */
+  background-color: #fc9d04 !important; /* Change bullet color */
 }
 
 .swiper-button-next, 
@@ -441,23 +441,6 @@ a:focus {
     background-color: #fc9d04;
     margin: 10px auto 0;
 }
-.detai h4 {
-  display: inline-block; /* Ensure the h4 behaves as an inline element */
-  white-space: nowrap;   /* Prevent text from wrapping */
-  overflow: hidden;      /* Hide overflowed text */
-  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
-  max-width: 100%;       /* Ensure it doesn't overflow its container */
-}
-@media (max-width: 768px) {
-  .detai h4 {
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden;    /* Optional: Hide overflow text */
-    text-overflow: ellipsis; /* Optional: Add ellipsis for overflow */
-    font-size: 16px;     /* Adjust the font size if needed */
-  }
-}
-
-
 
 
 .spcl_section .row {
