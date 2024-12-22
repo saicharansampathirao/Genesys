@@ -419,7 +419,7 @@ a:focus {
   color: #fc9d04;
 }
 .swiper-pagination-bullet {
-  background-color: #fc9d04 !important; /* Change bullet color */
+  background-color: transparent !important; /* Change bullet color */
 }
 
 .swiper-button-next, 
