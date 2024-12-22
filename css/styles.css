@@ -579,3 +579,130 @@ a:hover{
     }
   }
   
+
+  /* About Section */
+.about {
+    padding: 50px 0;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  
+  .feature-box {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .feature-box i {
+    font-size: 3rem;
+    color: #fc9d04;
+    margin-bottom: 10px;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Job Openings */
+  .job-openings {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: left;
+    height: 235px;
+  }
+  
+  .job-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .job-card p {
+    text-align: center;
+  }
+  
+  .job-card .apply-btn {
+    background-color: #fc9d04;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 90px;
+  }
+  
+  .job-card .apply-btn:hover {
+    background-color: #184d47;
+  }
+  
+  /* Culture Section */
+  .culture {
+    padding: 50px 0;
+   
+  }
+  .culture ul {
+    list-style-type: none;
+  }
+  
+  .culture img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Call to Action */
+  .cta {
+    background: #fc9d04;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+  }
+  
+  .cta .btn {
+    background-color: #fff;
+    color: #fc9d04;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .cta .btn:hover {
+    background-color: #184d47;
+    color: #fff;
+  }
+  .service-title1 h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #fc9d04;
+    margin: 10px auto 0;
+  }
+
+  .service-title1 {
+    font-size: 24px;
+    color: #fc9d04;
+    margin-bottom: 10px;
+}
+
+.abc{
+    margin: 30px 30px 30px 30px;
+}
