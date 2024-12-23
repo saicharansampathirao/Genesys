@@ -24,3 +24,25 @@ $(document).on("click", '[data-toggle="lightbox"]', function (event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  });
+  // Get elements
+const menuToggle = document.querySelector('.menu-toggle');
+const popupNav = document.querySelector('.popup-nav');
+
+// Toggle popup visibility
+menuToggle.addEventListener('click', () => {
+  popupNav.classList.toggle('d-none');
+});
+
+// Close popup on clicking a menu item
+popupNav.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    popupNav.classList.add('d-none');
+  }
+});
+
+

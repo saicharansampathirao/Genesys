@@ -280,7 +280,7 @@ h2 {
 }
 
 .overlay-content {
-  position: relative;
+  position: absolute;
   top: 30%;
   width: 100%;
   text-align: center;
@@ -369,6 +369,8 @@ a:focus {
   margin-top: 15px;
 }
 
+
+
 .slider_section .detail-box .slider-link {
   display: inline-block;
   padding: 10px 45px;
@@ -433,6 +435,12 @@ a:focus {
   color: #fc9d04 !important; /* Change hover effect */
 }
 
+/* .slider_video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
 .detai  h4::after{
   content: "";
     display: block;
@@ -447,6 +455,7 @@ a:focus {
   overflow: hidden;      /* Hide overflowed text */
   text-overflow: ellipsis; /* Add ellipsis for overflowed text */
   max-width: 100%;       /* Ensure it doesn't overflow its container */
+  margin-left: 5px !important;
 }
 @media (max-width: 768px) {
   .detai h4 {
@@ -456,8 +465,6 @@ a:focus {
     font-size: 16px;     /* Adjust the font size if needed */
   }
 }
-
-
 
 
 .spcl_section .row {
@@ -487,7 +494,7 @@ a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #184d47));
-  background: linear-gradient(to bottom, transparent 70%, #102039 70%);
+  background: linear-gradient(to bottom, transparent 70%, #184d47 70%);
   padding: 0 25px 45px 25px;
  
 }
@@ -525,7 +532,7 @@ a:focus {
 .about_section .img-box {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #184d47));
-  background: linear-gradient(to bottom, transparent 70%, #102039 70%);
+  background: linear-gradient(to bottom, transparent 70%, #184d47 70%);
   padding: 0 25px 45px 25px;
   margin-top: 25px;
 }
@@ -777,6 +784,11 @@ a:focus {
       border-radius: 15px;
       margin: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .value-item:hover{
+      transform: scale(1.1);
     }
     
     .value-number {
@@ -938,6 +950,7 @@ a:focus {
 /* footer section*/
 .footer_section {
   background-color: #184d47;
+
   color: #ffffff;
   padding: 75px 0 40px 0;
   text-align: center;
@@ -983,6 +996,7 @@ a:focus {
 
  .contact_link_box a:hover {
   color: #fc9d04;
+  transform: scale(1.1);
 }
 
 .footer_section .footer-logo {
@@ -1002,7 +1016,9 @@ a:focus {
           justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
+  
 }
+
 
 .footer_section .footer_social a {
   display: -webkit-box;
@@ -1026,6 +1042,7 @@ a:focus {
 
 .footer_section .footer_social a:hover {
   color: #fc9d04;
+  transform: scale(1.1);
 }
 
 .footer_section .map_container {
@@ -1070,6 +1087,7 @@ a:focus {
 
 .footer_section .footer-info p :hover{
   color: #fc9d04;
+  
 }
 
 
