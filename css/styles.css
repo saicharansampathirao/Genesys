@@ -83,18 +83,9 @@ a:hover{
     margin-left: -10px;
   }
   .logo1{
-    margin-left: -20px;
+    margin-left: -50px;
   }
-
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: auto;
-  }
-
+  
   nav {
     display: none;
     width: 100%;
@@ -115,15 +106,7 @@ a:hover{
   }
 }
 
-/* General Styles */
-.menu-toggle {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Popup Navigation (Small Screens Only) */
+/* 
 .popup-nav {
   position: fixed;
   top: 0;
@@ -133,6 +116,92 @@ a:hover{
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+} 
+
+ .popup-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-nav li {
+  margin: 15px 0;
+}
+
+.popup-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.popup-nav.d-none {
+  display: none;
+}
+
+
+@media (max-width: 1024px) { 
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .popup-nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) { 
+  .popup-nav {
+    display: none !important;
+  }
+}  */
+
+
+
+/* General Styles */
+
+
+.desktop-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.desktop-nav li {
+  margin: 0 10px;
+}
+
+
+
+.menu-toggle {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  color: #184d47;
+  background-color: transparent;
+  border: none;
+  display: none; /* Default hidden */
+}
+
+.popup-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -155,32 +224,40 @@ a:hover{
   font-size: 20px;
 }
 
-.popup-nav.d-none {
-  display: none;
-}
-
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 991.98px) { /* Tablets and smaller devices */
   .desktop-nav {
-    display: none;
+    display: none; /* Hide desktop navigation */
   }
 
   .menu-toggle {
-    display: block;
+    display: block; /* Show toggle button */
   }
 
   .popup-nav {
-    display: flex;
+    display: none; /* Hidden by default */
+  }
+
+  .popup-nav.show {
+    display: flex; /* Show popup when toggled */
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) { /* Large screens */
+  .menu-toggle {
+    display: none; /* Hide the toggle button */
+  }
+
   .popup-nav {
-    display: none !important;
+    display: none !important; /* Ensure popup is always hidden */
+  }
+
+  .desktop-nav {
+    display: flex; /* Show desktop navigation */
   }
 }
 
-
+/* General Header Styles */
   
   /* Hero Section */
   /* .hero {
@@ -301,14 +378,7 @@ a:hover{
     color: #555;
 }
   
-  /* Footer Styles */
-  footer {
-    background-color: #184d47;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+
 
      /* Healthcare */
 

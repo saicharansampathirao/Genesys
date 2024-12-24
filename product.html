@@ -21,25 +21,40 @@
 
     <!-- Header Section -->
 
+
     <header class="bg-light">
-        <div class="container10 d-flex justify-content-between align-items-center">
-            <div class="logo1">
-              <a href="index.html" class="navbar-brand">
-                <img src="images/logo_small.png" alt="Logo" width="150" /> <h3>GENESYS INFO X</h3>
-              </a>
-            </div>
-            <nav>
-                <ul class="d-flex">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="careers.html">CAREERS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    
-                </ul>
-            </nav>
+      <div class="container10 d-flex justify-content-between align-items-center">
+        <div class="logo1">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="images/logo_small.png" alt="Logo" width="150" />
+            <h3 class="ms-2">GENESYS INFO X</h3>
+          </a>
         </div>
+        <nav class="desktop-nav d-none d-lg-flex"> <!-- Show only on large screens -->
+          <ul class="d-flex">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="careers.html">CAREERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle d-lg-none">☰</button> <!-- Show on tablets and smaller -->
+      </div>
     </header>
+    
+    <div class="popup-nav d-none">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="careers.html">CAREERS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
     
     <!-- Hero Section -->
     <section class="hero">

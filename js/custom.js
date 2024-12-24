@@ -46,3 +46,10 @@ popupNav.addEventListener('click', (e) => {
 });
 
 
+
+menuToggle.addEventListener("click", () => {
+  popupNav.classList.toggle("show"); // Toggle popup visibility
+});
+
+
+
